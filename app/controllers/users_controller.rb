@@ -20,6 +20,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     color = params[:color] || 'red'
+    text_color = color == 'black' ? 'white' : 'black'
 
     respond_to do |format|
       format.html # show.html.erb
@@ -38,6 +39,8 @@ class UsersController < ApplicationController
 
         svg_gen.set_paint java.awt.Color.send(color)
         svg_gen.fill java.awt.Rectangle.new(10,10,100,100)
+        svg_gen.set_paint java.awt.Color.send(text_color)
+        svg_gen.draw_string @user.name, 25, 55
 
         out = java.io.StringWriter.new
         svg_gen.stream(out, true)
