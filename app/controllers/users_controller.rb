@@ -46,6 +46,21 @@ class UsersController < ApplicationController
         svg_gen.stream(out, true)
         render :inline =>  out.to_string
       }
+
+      format.pdf {
+        require 'iText-5.0.5'
+        pdf = com.itextpdf.text.Document.new
+        para = com.itextpdf.text.Paragraph.new "Hello #{@user.name}"
+        file = "#{::Rails.root.to_s}/tmp/pdfs/pdf_demo.pdf" # not very secure
+        out = java.io.FileOutputStream.new file
+
+        com.itextpdf.text.pdf.PdfWriter.get_instance pdf, out
+        pdf.open
+        pdf.add para
+        pdf.close
+
+        render :file => file
+      }
     end
   end
 
