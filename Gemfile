@@ -10,7 +10,7 @@ if defined?(JRUBY_VERSION)
   gem 'jdbc-mysql', :require => false
   gem 'glassfish', '1.0.3.dev'
 else
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'mysql'
 end
 
 
