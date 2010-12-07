@@ -8,7 +8,7 @@ gem 'rails', '3.0.2'
 if defined?(JRUBY_VERSION)
   gem 'activerecord-jdbc-adapter'
   gem 'jdbc-mysql', :require => false
-  gem 'glassfish', '1.0.3.dev'
+  gem 'glassfish', '1.0.3.beta.1'
 else
   gem 'mysql'
 end
