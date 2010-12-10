@@ -76,6 +76,3 @@ DEPENDENCIES
   glassfish (= 1.0.3.beta.1)
   jdbc-mysql
   rails (= 3.0.3)
-
-METADATA
-  version: 1.0.6
