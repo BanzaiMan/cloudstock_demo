@@ -6,6 +6,7 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 if defined?(JRUBY_VERSION)
+  gem 'jruby-openssl'
   gem 'activerecord-jdbc-adapter'
   gem 'jdbc-mysql', :require => false
   gem 'glassfish'
