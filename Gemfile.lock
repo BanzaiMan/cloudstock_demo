@@ -76,6 +76,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbc-adapter
+  bundler
   glassfish
   jdbc-mysql
   jruby-openssl
