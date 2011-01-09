@@ -2,7 +2,7 @@
 
 # Find the latest bundler and get started
 require 'rbconfig'
-$:.unshift(Dir.glob[RbConfig["libdir"] + "/ruby/gems/1.8/gems/bundler-*/lib"].sort.last)
+$:.unshift(Dir[RbConfig::CONFIG["libdir"] + "/ruby/gems/1.8/gems/bundler-*/lib"].sort.last)
 require 'bundler/setup'
 
 require ::File.expand_path('../config/environment',  __FILE__)
