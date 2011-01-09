@@ -4,10 +4,7 @@ require 'rubygems'
 gemfile = File.expand_path('../../Gemfile', __FILE__)
 begin
   ENV['BUNDLE_GEMFILE'] = gemfile
-  require 'pp'
   require 'bundler'
-  pp ENV, $stderr
-  pp $:, $stderr
   Bundler.setup
 rescue Bundler::GemNotFound => e
   STDERR.puts e.message
