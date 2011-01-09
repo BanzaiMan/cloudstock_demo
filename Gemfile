@@ -15,8 +15,6 @@ else
   gem 'mysql'
 end
 
-gem 'ruby-debug'
-
 
 # Use unicorn as the web server
 # gem 'unicorn'
