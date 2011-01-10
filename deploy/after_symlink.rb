@@ -2,5 +2,5 @@
 require 'fileutils'
 
 pdfdir = ["tmp", "pdfs"]
-FileUtils::mkdir File.join(shared_path, "pdfs")
+FileUtils::mkdir_p File.join(shared_path, "pdfs")
 FileUtils::ln_sf File.join(shared_path, "pdfs"), File.join(release_path, pdfdir)
