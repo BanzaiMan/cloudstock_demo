@@ -10,7 +10,7 @@ if defined?(JRUBY_VERSION)
   gem 'jruby-openssl'
   gem 'activerecord-jdbc-adapter'
   gem 'jdbc-mysql', :require => false
-  gem 'glassfish'
+  gem 'trinidad'
 else
   gem 'mysql'
 end
