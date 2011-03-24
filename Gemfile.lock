@@ -34,11 +34,12 @@ GEM
     builder (2.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    glassfish (1.0.3-java)
+      rack (>= 0.4.0)
     i18n (0.5.0)
     jdbc-mysql (5.1.13)
     jruby-openssl (0.7.3)
       bouncy-castle-java
-    jruby-rack (1.0.6)
     mail (2.2.15)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -68,10 +69,6 @@ GEM
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
-    trinidad (1.0.5)
-      jruby-rack (>= 1.0.2)
-      trinidad_jars (>= 0.3.0)
-    trinidad_jars (1.0.0)
     tzinfo (0.3.24)
 
 PLATFORMS
@@ -80,7 +77,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-jdbc-adapter
   bundler
+  glassfish
   jdbc-mysql
   jruby-openssl
   rails (= 3.0.3)
-  trinidad
