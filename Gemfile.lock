@@ -79,7 +79,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbc-adapter
-  bundler
+  bundler (= 1.0.13)
   jdbc-mysql
   jruby-openssl
   rails (= 3.0.3)
